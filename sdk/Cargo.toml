@@ -20,105 +20,105 @@ categories = ["multimedia", "os", "wasm"]
 clipboard = ["dep:copypasta"]
 notifications = ["dep:notify-rust"]
 geolocation = [
-    # Shared
-    "dep:futures",
-    "dep:futures-util",
+  # Shared
+  "dep:futures",
+  "dep:futures-util",
 
-    # Windows
-    "windows/Foundation",
-    "windows/Devices_Geolocation",
+  # Windows
+  "windows/Foundation",
+  "windows/Devices_Geolocation",
 
-    # Wasm
-    "web-sys/Navigator",
-    "web-sys/Geolocation",
-    "web-sys/PositionOptions",
-    "dep:wasm-bindgen",
+  # Wasm
+  "web-sys/Navigator",
+  "web-sys/Geolocation",
+  "web-sys/PositionOptions",
+  "dep:wasm-bindgen",
 ]
 system_theme = [
-    # Shared
-    "dep:futures",
+  # Shared
+  "dep:futures",
 
-    # Desktop (not linux)
-    "dep:dioxus-desktop",
+  # Desktop (not linux)
+  "dep:dioxus-desktop",
 
-    # Wasm
-    "web-sys/Window",
-    "web-sys/MediaQueryList",
-    "dep:wasm-bindgen",
-    "dep:wasm-bindgen-futures",
+  # Wasm
+  "web-sys/Window",
+  "web-sys/MediaQueryList",
+  "dep:wasm-bindgen",
+  "dep:wasm-bindgen-futures",
 ]
 window_size = [
-    # Shared
-    "dep:futures-util",
+  # Shared
+  "dep:futures-util",
 
-    # Desktop
-    "dep:dioxus-desktop",
+  # Desktop
+  "dep:dioxus-desktop",
 
-    # Wasm
-    "web-sys/Window",
-    "dep:wasm-bindgen",
+  # Wasm
+  "web-sys/Window",
+  "dep:wasm-bindgen",
 ]
 channel = ["dep:async-broadcast", "uuid/v4"]
 i18n = [
-    # Shared
-    "dep:serde",
-    "dep:serde_json",
+  # Shared
+  "dep:serde",
+  "dep:serde_json",
 
-    # Non Shared
-    "dep:unic-langid",
+  # Non Shared
+  "dep:unic-langid",
 ]
 storage = [
-    # Shared
-    "dep:rustc-hash",
-    "dep:postcard",
-    "dep:once_cell",
-    "dep:dioxus-signals",
-    "dep:tokio",
-    "tokio/sync",
-    "dep:yazi",
-    "web-sys/Storage",
-    "web-sys/StorageEvent",
-    "dep:serde",
-    "dep:futures-util",
+  # Shared
+  "dep:rustc-hash",
+  "dep:postcard",
+  "dep:once_cell",
+  "dep:dioxus-signals",
+  "dep:tokio",
+  "tokio/sync",
+  "dep:yazi",
+  "web-sys/Storage",
+  "web-sys/StorageEvent",
+  "dep:serde",
+  "dep:futures-util",
 
-    # WASM
-    "dep:wasm-bindgen",
+  # WASM
+  "dep:wasm-bindgen",
 
-    # Not WASM
-    "dep:directories",
+  # Not WASM
+  "dep:directories",
 ]
 timing = [
-    # Shared
-    "dep:futures",
+  # Shared
+  "dep:futures",
 
-    # Desktop
-    "dep:tokio",
-    "tokio/time",
+  # Desktop
+  "dep:tokio",
+  "tokio/time",
 
-    # Wasm
-    "dep:gloo-timers",
+  # Wasm
+  "dep:gloo-timers",
 ]
 
 # CI testing
 wasm-testing = [
-    "system_theme",
-    "geolocation",
-    "channel",
-    "window_size",
-    "timing",
-    "i18n",
-    "storage",
+  "system_theme",
+  "geolocation",
+  "channel",
+  "window_size",
+  "timing",
+  "i18n",
+  "storage",
 ]
 desktop-testing = [
-    "system_theme",
-    "clipboard",
-    "notifications",
-    "geolocation",
-    "channel",
-    "window_size",
-    "i18n",
-    "timing",
-    "storage",
+  "system_theme",
+  "clipboard",
+  "notifications",
+  "geolocation",
+  "channel",
+  "window_size",
+  "i18n",
+  "timing",
+  "storage",
 ]
 
 
@@ -154,8 +154,8 @@ unic-langid = { version = "0.9.1", features = ["serde"], optional = true }
 rustc-hash = { version = "1.1.0", optional = true }
 postcard = { version = "1.0.2", features = ["use-std"], optional = true }
 once_cell = { version = "1.17.0", optional = true }
-dioxus-signals = { version = "0.5.1", features = [
-    "serialize",
+dioxus-signals = { git = "https://github.com/DioxusLabs/dioxus", rev = "b97e607aca0bd8a12971fcf403908addf9a45dd7", features = [
+  "serialize",
 ], optional = true }
 
 yazi = { version = "0.1.4", optional = true }
