@@ -5,6 +5,6 @@ members = ["sdk", "examples/*"]
 
 [workspace.dependencies]
 dioxus-sdk = { path = "./sdk" }
-dioxus = { git = "https://github.com/DioxusLabs/dioxus", rev = "b97e607aca0bd8a12971fcf403908addf9a45dd7" }
-dioxus-web = { git = "https://github.com/dioxuslabs/dioxus", rev = "b97e607aca0bd8a12971fcf403908addf9a45dd7" }
-dioxus-desktop = { git = "https://github.com/dioxuslabs/dioxus", rev = "b97e607aca0bd8a12971fcf403908addf9a45dd7" }
+dioxus = { git = "https://github.com/DioxusLabs/dioxus", rev = "005d52468d00bdd2df3ab6ca6f1ae81b96e5c47d" }
+dioxus-web = { git = "https://github.com/dioxuslabs/dioxus", rev = "005d52468d00bdd2df3ab6ca6f1ae81b96e5c47d" }
+dioxus-desktop = { git = "https://github.com/dioxuslabs/dioxus", rev = "005d52468d00bdd2df3ab6ca6f1ae81b96e5c47d" }
